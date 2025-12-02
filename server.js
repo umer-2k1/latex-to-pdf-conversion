@@ -1,8 +1,8 @@
-const express = require("express");
-const fs = require("fs");
-const path = require("path");
-const { exec } = require("child_process");
-const crypto = require("crypto");
+import express from "express";
+import fs from "fs";
+import path from "path";
+import { exec } from "child_process";
+import crypto from "crypto";
 
 const app = express();
 app.use(express.text({ limit: "5mb" }));
