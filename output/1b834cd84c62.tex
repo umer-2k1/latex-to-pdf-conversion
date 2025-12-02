@@ -1,0 +1,162 @@
+%-------------------------
+% Resume in Latex (Customized for Muhammad Umer)
+% Based on Jake Gutierrez Template
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% \usepackage[sfdefault]{roboto}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom Commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Muhammad Umer} \\ \vspace{2pt}
+    \small +92 315 3271442 $|$
+    \href{mailto:mumer.2k1@gmail.com}{\underline{mumer.2k1@gmail.com}} $|$
+    \href{https://github.com/umer-2k1}{\underline{GitHub}} $|$
+    \href{https://www.linkedin.com/in/mumer2001/}{\underline{LinkedIn}} $|$
+    \href{https://umer2k1-dev.netlify.app/}{\underline{Portfolio}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+Senior Full-Stack Developer (3 years) with expertise in React Native, Node.js, and TypeScript. Proven track record of delivering scalable, high-quality mobile and web applications with a strong focus on performance optimization and best practices.
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Programming Languages:} JavaScript, TypeScript, Python \\
+\textbf{Mobile App Development:} React Native \\
+\textbf{Frontend Frameworks:} Next.js, React.js \\
+\textbf{Backend Frameworks:} Node.js, NestJS \\
+\textbf{Databases:} MongoDB, PostgreSQL \\
+\textbf{CSS Preprocessors:} CSS, Styled Components, React Native Stylesheets \\
+}}
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+% Sybrid
+\resumeSubheading
+{Sybrid Private Limited — A Lakson Group Company}{Jul 2025 -- Present}
+{Full-Stack Software Engineer}{Karachi, Pakistan}
+\resumeItemListStart
+\resumeItem{Leading the development of a React Native iOS medication app with diagnosis modules.}
+\resumeItem{Implementing CI/CD pipelines using Codemagic to reduce manual release time.}
+\resumeItem{Managing backend services (Node.js) and Next.js admin panel with secure medical data workflows.}
+\resumeItemListEnd
+
+% Kodexolabs
+\resumeSubheading
+{Kodexolabs}{Oct 2024 -- Jul 2025}
+{Full-Stack Software Engineer}{Karachi, Pakistan}
+\resumeItemListStart
+\resumeItem{Developed a React Native iOS health app integrating Apple HealthKit.}
+\resumeItem{Built an AI-driven nutrition, workout, and wellness system using LangChain + RAG.}
+\resumeItem{Created an AI Virtual Trainer that increased user engagement by 40\%.}
+\resumeItemListEnd
+
+% DotClick
+\resumeSubheading
+{DotClick LLC}{Aug 2023 -- Oct 2024}
+{Full-Stack Software Engineer}{Karachi, Pakistan}
+\resumeItemListStart
+\resumeItem{Built Refill Arena, a crypto gift card platform generating \$1M+ revenue in its first year.}
+\resumeItem{Integrated Coinbase Commerce + MetaMask for secure multi-currency blockchain payments.}
+\resumeItem{Developed scalable APIs supporting 3,200+ brands across 190+ countries with 99.9\% uptime.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading{\textbf{Design Heaven} | React, Fabric.js, FFmpeg, Unsplash API}{}
+\resumeItemListStart
+\resumeItem{Built a poster and video editor with trimming, merging, text effects, and asset library.}
+\resumeItemListEnd
+
+\resumeProjectHeading{\textbf{CryptoCity} | React, CoinGecko API, Chart.js}{}
+\resumeItemListStart
+\resumeItem{Developed a real-time crypto tracker with charting and global price updates.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Dawood University of Engineering \& Technology}{Dec 2020 -- Jul 2024}
+{Bachelor of Engineering in Computer System Engineering | CGPA: 3.6}{Karachi, Pakistan}
+\resumeSubHeadingListEnd
+
+\end{document}
