@@ -23,9 +23,14 @@ app.get("/health-check", async (req, res) => {
   }
 });
 
-app.post("/compile-latex", async (req, res) => {
-  const resume = req.body;
 
+ 
+
+app.post("/compile-latex", async (req, res) => {
+  const resumeBody = req.body; 
+  const resume = resumeBody.split("<code>")[1]?.split("</code>")[0]?.trim() || ""; 
+ 
+ 
   if (!resume) {
     return res
       .status(400)
@@ -50,7 +55,7 @@ app.post("/compile-latex", async (req, res) => {
         (error, stdout, stderr) => {
           console.log("pdflatex stdout:\n", stdout);
           console.log("pdflatex stderr:\n", stderr);
-          if (error) return reject(stderr || stdout || error);
+          // if (error) return reject(stderr || stdout || error);
           resolve(stdout);
         }
       );
